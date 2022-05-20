@@ -1,4 +1,6 @@
-const countDownDate = new Date("May 28, 2022 12:30").getTime();
+const today = new Date().getDate();
+const countDownDate = new Date().setDate(today + 8).getTime(); 
+
 const days = document.getElementById("days");
 const hours = document.getElementById("hours");
 const minutes = document.getElementById("minutes");
@@ -25,7 +27,7 @@ const launchTimer = setInterval(function() {
     seconds.innerHTML = secondsCal;
       
     // when the count down is over 
-    if (distance < 0) {
+    if (differenceBetweenPresentTimeAndNow <= 0) {
       clearInterval(launchTimer);
       document.getElementById("expired").innerHTML = "We Have Just Lauched, Shop With Us.";
     }
