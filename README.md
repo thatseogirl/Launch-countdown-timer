@@ -5,12 +5,9 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - See a live countdown timer that ticks down every second (start the count at 14 days)
 
-### Screenshot
-
-![](./screenshot.jpg)
 
 ### Links
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://thatseogirl.github.io/Launch-countdown-timer/]
 
 ## My process
 
