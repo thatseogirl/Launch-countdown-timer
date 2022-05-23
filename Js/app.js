@@ -1,6 +1,4 @@
-const today = new Date().getDate();
-const countDownDate = new Date().setDate(today + 8).getTime(); 
-
+const countDownDate = new Date('July 25, 2022 15:37:25').getTime();
 const days = document.getElementById("days");
 const hours = document.getElementById("hours");
 const minutes = document.getElementById("minutes");
@@ -21,7 +19,7 @@ const launchTimer = setInterval(function() {
     const secondsCal = Math.floor((differenceBetweenPresentTimeAndNow % (1000 * 60)) / 1000);
       
     // Output the result in an element inner.HTML
-    days.innerHTML = "0" + daysCal;
+    days.innerHTML = daysCal;
     hours.innerHTML = hoursCal;
     minutes.innerHTML = minutesCal;
     seconds.innerHTML = secondsCal;
